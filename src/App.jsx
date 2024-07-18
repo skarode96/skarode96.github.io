@@ -27,12 +27,12 @@ const siteProps = {
   name: "Sameer Karode",
   title: "Software Engineer",
   email: "skarode96@gmail.com",
-  gitHub: "https://github.com/skarode96",
-  instagram: "https://www.instagram.com/orion_voyager/",
-  linkedIn: "https://www.linkedin.com/in/skarode/",
-  medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  gitHub: "skarode96",
+  instagram: "orion_voyager",
+  linkedIn: "skarode",
+  medium: "skarode96",
+  twitter: undefined,
+  youTube: "dailymindclips",
 };
 
 const primaryColor = "#7883FF";
