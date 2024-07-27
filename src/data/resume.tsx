@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
-import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
+import {Briefcase, CodeIcon, HomeIcon, NotebookIcon, PencilLine} from "lucide-react";
+import {MagicWandIcon} from "@radix-ui/react-icons";
 
 export const DATA = {
   name: "Sameer Karode",
@@ -29,9 +30,9 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "#", icon: CodeIcon, label: "Projects" },
-    { href: "#", icon: PencilLine, label: "Notes" },
+    { href: "#work", icon: Briefcase, label: "Work Experience" },
+    { href: "#projects", icon: CodeIcon, label: "Projects" },
+    // { href: "#notes", icon: PencilLine, label: "Notes" },
   ],
   contact: {
     email: "skarode96@gmail.com",
