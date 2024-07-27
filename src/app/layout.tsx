@@ -57,7 +57,13 @@ export default function RootLayout({
   return (
       <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta property="og:title" content="Sameer Karode" key="title"/>
+        <meta name="title" content={DATA.name}/>
+        <meta property="og:title" content={DATA.name} key="title"/>
+        <meta name="description"
+              content={DATA.description}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content={DATA.url}/>
+        <meta property="og:image" content={DATA.avatarUrl}/>
       </Head>
       <body
           className={cn(
