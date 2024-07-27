@@ -63,7 +63,7 @@ export default function RootLayout({
               content={DATA.description}/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content={DATA.url}/>
-        <meta property="og:image" content={DATA.avatarUrl}/>
+        <meta property="og:image" content={`${DATA.url}${DATA.avatarUrl}`}/>
       </Head>
       <body
           className={cn(
