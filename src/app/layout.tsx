@@ -62,8 +62,8 @@ export default function RootLayout({
         <meta name="description"
               content={DATA.description}/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content="/me.jpeg" key="image"/>
-        <meta property="og:url" content="https://github.com/user-attachments/assets/7727218e-6556-47db-b3e1-b14abfd0203b"/>
+        <meta property="og:url" content={DATA.url}/>
+        <meta property="og:image" content={`${DATA.url}${DATA.avatarUrl}`}/>
       </Head>
       <body
           className={cn(
