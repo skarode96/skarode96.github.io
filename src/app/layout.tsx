@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -24,6 +23,11 @@ export const metadata: Metadata = {
     title: `${DATA.name}`,
     description: DATA.description,
     url: DATA.url,
+    images: [{
+      url: `${DATA.url}${DATA.avatarUrl}`,
+      width: 600,
+      height: 600,
+    },],
     siteName: `${DATA.name}`,
     locale: "en_US",
     type: "website",
@@ -56,15 +60,6 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en" suppressHydrationWarning>
-      <Head>
-        <meta name="title" content={DATA.name}/>
-        <meta property="og:title" content={DATA.name} key="title"/>
-        <meta name="description"
-              content={DATA.description}/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content={DATA.url}/>
-        <meta property="og:image" content={`${DATA.url}${DATA.avatarUrl}`}/>
-      </Head>
       <body
           className={cn(
               "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
